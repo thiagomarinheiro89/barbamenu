@@ -1,0 +1,35 @@
+<div class='container'>
+  <div class='row justify-content-md-center'>
+    <div class='col-8'>
+      <div class="card">
+            <div class="card-header bg-dark text-white">Filtrar Usuarios</div>
+            <div class="card-body">
+              Nome do Usuário
+              <div class="input-group mb-3">
+                <input type="text" id="texto" class="form-control" placeholder="Nome do Usuário" onkeyup="lista_usuarios()">
+                <div class="input-group-append">
+                  <button class="btn btn-dark" onclick="lista_usuarios()"><i class="fas fa-search"></i></button>
+                 </div>
+              </div>
+            </div>
+            <div class="card-footer text-right" onclick='adiciona()'><button class='btn btn-dark'><i class="fas fa-plus"></i> Adicionar</button></div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <table class='table table-striped'>
+    <thead>
+      <tr>
+        <th>#
+        <th>Nome do Usuário
+        <th>E-mail
+        <th>Login
+        <th>
+      </tr>
+    </thead>
+    <tbody id='tb'>
+
+    </tbody>
+  </table>
+</div>
+<script src="js/usuarios.js"></script>

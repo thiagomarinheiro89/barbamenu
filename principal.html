@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>. : BarbaMenu Admin : .</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/principal.css">
+  <script src="js/principal.js"></script>
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class='topo'>
+  <img src='img/logo_menu.png' class='ico-logo'>
+
+
+  <table class='logado' onclick='logado()'>
+    <tr>
+      <td rowspan="2"><img src='img/fotos/users/no-foto.jpg' class='foto_logado'>
+      <td><span class='nome_logado'>Nome do Usuário</span><br>
+    </tr>
+    <tr>
+      <td><span class='email_logado'>email@email.com.br</span>
+    </tr>
+  </table>
+</div>
+<div class='load'>
+  <img src='img/load.gif' class='img_load'>
+</div>
+
+<div class='perfil'>
+  <div class='opcao_perfil' onclick='sair()'>
+    <i class="fas fa-times"></i> Sair
+  </div>
+</div>
+
+
+<div class='menu'>
+  <div class='sair' onclick='sair()'><i class="fas fa-times"></i> Sair</div>
+</div>
+<div class='bt_menu' onclick='menu()'>
+  <i class="fas fa-bars"></i>
+</div>
+<div class='titulo-modulo'>
+</div>
+<div class='conteudo'>
+</div>
+
+<div class="modal fade" id="modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class='btn btn-danger' onclick="limpa_modal()"> <i class="fas fa-times"></i> Fechar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<div class='container'>
+  <table class='table table-striped'>
+    <tr>
+      <td rowspan=5 width=40%><center><img src='img/lojas/nologo.png' class='logo_loja'></center><br><br>
+        <form id="logotipo" method="post" enctype="multipart/form-data">
+        <input type='file' id='file' name='file' style='display:none'>
+        </form>
+        <button class='btn btn-dark btn-block' id='btn_logo' onclick='seleciona_logo()'><i class="far fa-image"></i> Selecionar Logo</button>
+      <td>Nome da Loja:
+      <input type='text' class='form-control' name='nome_loja' id='nome_loja'>
+    </tr>
+    <tr>
+      <td>Telefone:
+      <input type='text' class='form-control' name='telefone' id='telefone'>
+    </tr>
+    <tr>
+      <td>Instagram:
+      <input type='text' class='form-control' name='insta' id='insta'>
+    </tr>
+    <tr>
+      <td>Facebook:
+      <input type='text' class='form-control' name='face' id='face'>
+    </tr>
+    <tr>
+      <td>Ativa:
+      <input type='checkbox'  name='face' id='face'>
+    </tr>
+  </table>
+</div>
+
+<script>
+  $(".load").hide();
+</script>

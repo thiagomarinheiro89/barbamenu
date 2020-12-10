@@ -1,0 +1,202 @@
+body{
+  color:#595D60;
+}
+
+.topo{
+  width:100vw;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-bottom: solid 1px #ccc;
+  padding:5px;
+  z-index: 99;
+}
+.ico-logo{
+  height: 40px;
+}
+
+.logado{
+  float:right;
+  margin-right: 10px;
+  margin-top: -3px;
+  height:40px;
+  cursor: pointer;
+}
+.foto_logado{
+  height: 36px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 5px;
+  position: relative;
+  top:18%;;
+  margin-right: 10px;
+
+}
+.nome_logado{
+  font-size:15px;
+  position:relative;
+  top:5px;
+  font-weight: bold;
+}
+.email_logado{
+  font-size: 13px;
+  position:relative;
+  top:-5px;
+}
+
+.logo_loja{
+  width:50%;
+  margin:auto;
+}
+
+.perfil{
+    width: 13vw;
+    background-color: #fff;
+    border:solid 1px #ccc;
+    position:fixed;
+    top: -300px;
+    left: 86vw;
+    z-index: 100;
+    box-shadow: 2px 2px 5px #ccc;
+    padding: 10px;
+  }
+
+.menu{
+  z-index: 97;
+  width: 15vw;
+  position: fixed;
+  top:50px;
+  left:0px;
+  height: calc(100% - 50px);
+  background-color: #595D60;
+  color: #fff;
+}
+
+.op_menu{
+    background-color: #45484a;
+    width: 15vw;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    color:#fff;
+    border-bottom: solid 1px #666;
+    border-right: solid 5px #000;
+}
+
+.sair{
+    background-color: #f00;
+    width: 15vw;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    color:#fff;
+    border-bottom: solid 1px #666;
+    border-right: solid 5px #000;
+    position: fixed;
+    height: 34px;
+    top: calc(100vh - 34px);
+}
+
+.op_menu:hover{
+    background-color: #45484A;
+    padding-left: 20px;
+    border-right: solid 5px #f00;
+}
+
+.bt_menu{
+  z-index: 98;
+  position: fixed;
+  color:#fff;
+  left: 15vw;
+  top: 50px;
+  background-color: #595D60;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+}
+
+.titulo-modulo{
+  z-index: 97;
+  position: fixed;
+  top: 50px;
+  left: 15vw;
+  width: calc(100vw - 15vw);
+  height: 40px;
+  background-color: #282C34;
+  padding-left: 50px;
+  padding-top: 7px;
+  color:#fff;
+}
+
+.conteudo{
+  z-index: 96;
+  position: fixed;
+  top: 90px;
+  left: 15vw;
+  width: calc(100vw - 15vw);
+  height: calc(100vh - 90px);
+  background-color: #F1F3F5;
+  padding: 10px;
+  overflow: auto;
+}
+
+.opcao_perfil{
+  width:80%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.load{
+  z-index: 101;
+  display: none;
+  position: fixed;
+  top: 90px;
+  left: 15vw;
+  width: calc(100vw - 15vw);
+  height: calc(100vh - 90px);
+  background-color: rgba(200, 200, 200, 0.5);
+  padding: 10px;
+}
+
+.img_load{
+  width: 60%;
+  height: 70%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -30%;
+  margin-top:-15%;
+}
+
+@media only screen and (max-width: 600px) {
+  .nome_logado{
+    display: none;
+  }
+  .email_logado{
+    display: none;
+  }
+  .menu{
+    width:80vw;
+    left: -80vw;
+  }
+  .op_menu{
+      width: 80vw;
+  }
+  .sair{
+      width: 80vw;
+  }
+  .bt_menu{
+    left: 0px;
+  }
+  .conteudo{
+    width: 100vh;
+    left:0px;
+  }
+  .titulo-modulo{
+    width: 100vh;
+    left:0px;
+    z-index: 96;
+  }
+  .perfil{
+    width: 50%;
+    left: 49%
+  }
+}
